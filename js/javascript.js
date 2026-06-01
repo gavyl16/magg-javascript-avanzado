@@ -4,7 +4,7 @@ function cargarNoticias(
 ){
 
     fetch(
-        "/assets/json/noticias.json"
+        "/magg-javascript-avanzado/assets/json/noticias.json"
     )
 
     .then(response => {
@@ -603,7 +603,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 async function cargarIdioma(idioma) {
     try {
-        const response = await fetch("/assets/json/idiomas.json");
+        const response = await fetch("/magg-javascript-avanzado/assets/json/idiomas.json");
         const data = await response.json();
         const traduccion = data[idioma];
 
