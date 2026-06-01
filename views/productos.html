@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- META ETIQUETAS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diseñamos y construimos casas de madera que combinan naturaleza, confort y diseño. Espacios cálidos, sostenibles y hechos para durar, pensados para quienes buscan vivir en armonía con el entorno.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Gabriel V.A.">
+    <meta name="keywords" content="casa, casa de madera, coruña, casa de madrea natural, casa de madera coruña">
+    <meta name="locality" content="culleredo, Galicia, España">
+    <meta name="category" content="Spanish, Spain, Wood carpentry">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <!-- TITULO-->
+    <title>MAGG || Casas de diseño</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a href="../index.html" class="navbar-brand">
+                    <img class="logo-img" src="../assets/img/MAGG.png" alt="Logo" width="55" height="55">
+                    <span class="leter-logo">MAGG</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav justify-content-center w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" id="navEstudio" aria-current="page" href="../index.html">El Estudio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="navCasos" href="#">Casos de Éxito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="navProyecto" href="./presupuestos.html">Inicia tu Proyecto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="navCita" href="./contacto.html">Agendar Cita</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown language-selector">
+                    <button class="btn d-flex align-items-center p-0 border-0" type="button" aria-expanded="false">
+                        <img id="banderaActual" src="../assets/img/espana.png" alt="España" width="25" height="25">
+                    </button>
+                    <!-- Dropdown de selección de idioma -->
+                    <ul class="dropdown-menu p-1">
+                        <li>
+                            <button class="dropdown-item d-flex align-items-center p-2 idioma-btn" type="button" data-lang="es">
+                                <img src="../assets/img/espana.png" alt="España" width="25" height="25">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item d-flex align-items-center p-2 idioma-btn" type="button" data-lang="gl">
+                                <img src="../assets/img/galicia.png" alt="Galego" width="25" height="25">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item d-flex align-items-center p-2 idioma-btn" type="button" data-lang="en">
+                                <img src="../assets/img/reino-unido.png" alt="Inglés" width="25" height="25">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item d-flex align-items-center p-2 idioma-btn" type="button" data-lang="pt">
+                                <img src="../assets/img/portugal.png" alt="Portugués" width="25" height="25">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <a href="./contacto.html" id="btnContacto" class="contactHeader">Contáctanos</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="flex-grow-1">
+        <section class="casos-exito">
+            <div class="container">
+                <h1 id="casosTitulo">Casos de éxito</h1>
+                <p id="casosSubtitulo" class="subtitulo">
+                    Descubre algunos de nuestros proyectos
+                    finalizados y cómo transformamos ideas
+                    en hogares sostenibles y funcionales.
+                </p>
+                <div class="galeria-grid">
+                    <!-- CASO 1 -->
+                    <a href="../assets/img/casa1.png"
+                    data-lightbox="casos"
+                    data-title="Vivienda familiar en A Coruña"
+                    class="galeria-item">
+                        <img src="../assets/img/casa1.png"
+                        alt="Vivienda familiar en A Coruña">
+                        <div class="proyecto-info">
+                            <h2 id="caso1Titulo">Vivienda familiar en A Coruña</h2>
+                            <p id="caso1Texto" class="descripcion">
+                                Proyecto moderno diseñado para una
+                                familia joven, priorizando luz natural
+                                y eficiencia energética.
+                            </p>
+                            <div class="proyecto-meta">
+                                <span>120m²</span>
+                                <span id="caso1Hab">3 habitaciones</span>
+                                <span id="caso1Tiempo">4 meses</span>
+                            </div>
+                            <span id="caso1Cta" class="cta">
+                                Ver proyecto
+                            </span>
+                        </div>
+                    </a>
+                    <!-- CASO 2 -->
+                    <a href="../assets/img/casa-familiar.png"
+                    data-lightbox="casos"
+                    data-title="Casa nórdica en Lugo"
+                    class="galeria-item">
+                        <img src="../assets/img/casa-familiar.png"
+                        alt="Casa nórdica en Lugo">
+                        <div class="proyecto-info">
+                            <h2 id="caso2Titulo">Casa nórdica en Lugo</h2>
+                            <p id="caso2Texto" class="descripcion">
+                                Vivienda amplia pensada para
+                                maximizar confort térmico y
+                                sostenibilidad.
+                            </p>
+                            <div class="proyecto-meta">
+                                <span>150m²</span>
+                                <span id="caso2Hab">4 habitaciones</span>
+                                <span id="caso2Tiempo">5 meses</span>
+                            </div>
+                            <span id="caso2Cta" class="cta">
+                                Ver proyecto
+                            </span>
+                        </div>
+                    </a>
+                    <!-- CASO 3 -->
+                    <a href="../assets/img/casa-rural.png"
+                    data-lightbox="casos"
+                    data-title="Casa rural en Ourense"
+                    class="galeria-item">
+                        <img src="../assets/img/casa-rural.png"
+                        alt="Casa rural en Ourense">
+                        <div class="proyecto-info">
+                            <h2 id="caso3Titulo">Casa rural en Ourense</h2>
+                            <p id="caso3Texto" class="descripcion">
+                                Diseño acogedor adaptado al entorno
+                                natural con acabados sostenibles.
+                            </p>
+                            <div class="proyecto-meta">
+                                <span>95m²</span>
+                                <span id="caso3Hab">2 habitaciones</span>
+                                <span id="caso3Tiempo">3 meses</span>
+                            </div>
+                            <span id="caso3Cta" class="cta">
+                                Ver proyecto
+                            </span>
+                        </div>
+                    </a>
+                    <!-- CASO 4 -->
+                    <a href="../assets/img/casa-minimalista.png"
+                    data-lightbox="casos"
+                    data-title="Casa minimalista en Santiago"
+                    class="galeria-item">
+                        <img src="../assets/img/casa-minimalista.png"
+                        alt="Casa minimalista en Santiago">
+                        <div class="proyecto-info">
+                            <h2 id="caso4Titulo">Casa minimalista en Santiago</h2>
+                            <p id="caso4Texto" class="descripcion">
+                                Proyecto de líneas limpias y espacios
+                                abiertos pensado para eficiencia
+                                energética.
+                            </p>
+                            <div class="proyecto-meta">
+                                <span>110m²</span>
+                                <span id="caso4Hab">3 habitaciones</span>
+                                <span id="caso4Tiempo">4 meses</span>
+                            </div>
+                            <span id="caso4Cta" class="cta">
+                                Ver proyecto
+                            </span>
+                        </div>
+                    </a>
+                    <!-- CASO 5 -->
+                    <a href="../assets/img/casa_nordica.png"
+                    data-lightbox="casos"
+                    data-title="Casa Nórdica en Noalla"
+                    class="galeria-item">
+                        <img src="../assets/img/casa_nordica.png"
+                        alt="Casa Nórdica en Noalla">
+                        <div class="proyecto-info">
+                            <h2 id="caso5Titulo">Casa nórdica en Noalla</h2>
+                            <p id="caso5Texto" class="descripcion">
+                                Vivienda de inspiración escandinava,
+                                diseñada para maximizar luminosidad,
+                                confort y eficiencia energética.
+                            </p>
+                            <div class="proyecto-meta">
+                                <span>140m²</span>
+                                <span id="caso5Hab">3 habitaciones</span>
+                                <span id="caso5Tiempo">5 meses</span>
+                            </div>
+                            <span id="caso5Cta" class="cta">
+                                Ver proyecto
+                            </span>
+                        </div>
+                    </a>
+                    <!-- CASO 6 -->
+                    <a href="../assets/img/casa-de-montaña.png"
+                    data-lightbox="casos"
+                    data-title="Casa de montaña en Tui"
+                    class="galeria-item">
+                        <img src="../assets/img/casa-de-montaña.png"
+                        alt="Casa de montaña en Tui">
+                        <div class="proyecto-info">
+                            <h2 id="caso6Titulo">Casa de montaña en Tui</h2>
+                            <p id="caso6Texto" class="descripcion">
+                                Proyecto acogedor adaptado a climas
+                                fríos, combinando aislamiento térmico
+                                y acabados naturales.
+                            </p>
+                            <div class="proyecto-meta">
+                                <span>160m²</span>
+                                <span id="caso6Hab">4 habitaciones</span>
+                                <span id="caso6Tiempo">6 meses</span>
+                            </div>
+                            <span id="caso6Cta" class="cta">
+                                Ver proyecto
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="planos-section">
+            <div class="container">
+                <h2 id="planosTitulo">Planos y distribuciones</h2>
+                <p id="planosSubtitulo" class="subtitulo-planos">
+                    Descubre algunos ejemplos de distribución
+                    interior y organización de espacios de nuestras viviendas.
+                </p>
+                <div class="planos-grid">
+                    <article class="plano-card">
+                        <img src="../assets/img/plano1.png"
+                        alt="Plano Casa Moderna">
+                        <div class="plano-info">
+                            <h3 id="plano1Titulo">Casa Moderna</h3>
+                            <p id="plano1Texto">
+                                Distribución funcional con espacios
+                                abiertos y abundante luz natural.
+                            </p>
+                            <div class="plano-meta">
+                                <span>120m²</span>
+                                <span id="plano1Hab">3 habitaciones</span>
+                            </div>
+                            <button id="plano1Btn">
+                                Ver plano
+                            </button>
+                        </div>
+                    </article>
+                    <article class="plano-card">
+                        <img src="../assets/img/plano2.png"
+                        alt="Plano Casa Nórdica">
+                        <div class="plano-info">
+                            <h3 id="plano2Titulo">Casa Nórdica</h3>
+                            <p id="plano2Texto">
+                                Diseño minimalista optimizado
+                                para eficiencia energética.
+                            </p>
+                            <div class="plano-meta">
+                                <span>140m²</span>
+                                <span id="plano2Hab">4 habitaciones</span>
+                            </div>
+                            <button id="plano2Btn">
+                                Ver plano
+                            </button>
+                        </div>
+                    </article>
+                    <article class="plano-card">
+                        <img src="../assets/img/plano3.png"
+                        alt="Plano Casa rural">
+                        <div class="plano-info">
+                            <h3 id="plano3Titulo">Casa de rural</h3>
+                            <p id="plano3Texto">
+                                Espacios acogedores adaptados
+                                a climas fríos y terrenos elevados.
+                            </p>
+                            <div class="plano-meta">
+                                <span>95m²</span>
+                                <span id="plano3Hab">2 habitaciones</span>
+                            </div>
+                            <button id="plano3Btn">
+                                Ver plano
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row bg-#5A3A29 text-light py-4">
+                <div class="col-md-4 col-lg-4">
+                    <h4 id="footerSecciones" class="border-bottom pb-2">Secciones</h4>
+                    <ul class="navbar-nav justify-content-center w-100">
+                        <li class="nav-item pb-2 pt-2">
+                            <a class="link" id="footerEstudio" aria-current="page" href="../index.html">El Estudio</a>
+                        </li>
+                        <li class="nav-item pb-2 pt-2">
+                            <a class="link" id="footerCasos" href="#">Casos de Éxito</a>
+                        </li>
+                        <li class="nav-item pb-2 pt-2">
+                            <a class="link" id="footerProyecto" href="./presupuestos.html">Inicia tu Proyecto</a>
+                        </li>
+                        <li class="nav-item pb-2 pt-2">
+                            <a class="link" id="footerCita" href="./contacto.html">Agendar Cita</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="row text-center">
+                        <div class="col-12 p-3">
+                            <img src="../assets/img/MAGG.png" alt="Logo" width="90" height="90">
+                        </div>
+                        <div class="col-md-4 mt-3 pt-3">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <img src="../assets/img/facebook.png" alt="Facebook" width="30" height="30">
+                            </a>
+                        </div>
+                        <div class="col-md-4 mt-3 pt-3">
+                            <a href="https://www.instagram.com" target="_blank">
+                                <img src="../assets/img/application_15072085.png" alt="Instagram" width="30" height="30">
+                            </a>
+                        </div>
+                        <div class="col-md-4 mt-3 pt-3">
+                            <a href="https://www.twitter.com" target="_blank">
+                                <img src="../assets/img/twitter_5968830.png" alt="Twitter" width="30" height="30">
+                            </a>
+                        </div>
+                        <div class="col-12 mt-3 pt-3">
+                            <span id="footerCopy">&copy; 2024 MAGG. Todos los derechos reservados.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <h4 id="footerContacto" class="text-end border-bottom pb-2">Contacto</h4>
+                    <p id="footerDireccion" class="text-end">AC-213, 91, 15174 Culleredo, La Coruña</p>
+                    <p id="footerHorario" class="text-end">Lunes - Viernes</p>
+                    <p id="footerHorarioHora" class="text-end">9:00 - 20:00</p>
+                    <p id="footerEmail" class="text-end">info@magg.es</p>
+                    <p id="footerTelefono" class="text-end">981 123 456</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center bg-dark text-light py-2">
+                <div class="col-12 text-center">
+                    <a class="link" href="./aviso-legal.html">
+                        <span id="legalAviso">Aviso legal</span>
+                    </a>
+                    <a class="link" href="./politica-privacidad.html">
+                        <span id="legalPrivacidad">Política de privacidad</span>
+                    </a>
+                    <a class="link" href="./politica-cookies.html">
+                        <span id="legalCookies">Política de cookies</span>
+                    </a>
+                    <a class="link" href="./politica-ventas.html">
+                        <span id="legalVentas">Política de ventas</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- LIGHTBOX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    <script>
+    lightbox.option({
+        resizeDuration: 200,
+        wrapAround: true,
+        fadeDuration: 200
+    });
+    </script>
+    <!--JS-->
+    <script src="../js/javascript.js"></script>
+</body>
+</html>

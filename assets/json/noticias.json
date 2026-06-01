@@ -1,0 +1,104 @@
+[
+    {
+        "es": {
+            "titulo":
+            "Nueva vivienda ecológica terminada",
+
+            "descripcion":
+            "Finalizamos un proyecto de vivienda sostenible utilizando madera certificada."
+        },
+
+        "gl": {
+            "titulo":
+            "Nova vivenda ecolóxica rematada",
+
+            "descripcion":
+            "Finalizamos un proxecto de vivenda sostible empregando madeira certificada."
+        },
+
+        "en": {
+            "titulo":
+            "New ecological home completed",
+
+            "descripcion":
+            "We completed a sustainable housing project using certified wood."
+        },
+
+        "pt": {
+            "titulo":
+            "Nova habitação ecológica concluída",
+
+            "descripcion":
+            "Concluímos um projeto sustentável utilizando madeira certificada."
+        }
+    },
+
+    {
+        "es": {
+            "titulo":
+            "Materiales sostenibles certificados",
+
+            "descripcion":
+            "Seguimos apostando por materiales ecológicos y de bajo impacto ambiental."
+        },
+
+        "gl": {
+            "titulo":
+            "Materiais sostibles certificados",
+
+            "descripcion":
+            "Seguimos apostando por materiais ecolóxicos e de baixo impacto ambiental."
+        },
+
+        "en": {
+            "titulo":
+            "Certified sustainable materials",
+
+            "descripcion":
+            "We continue using ecological and low-impact materials."
+        },
+
+        "pt": {
+            "titulo":
+            "Materiais sustentáveis certificados",
+
+            "descripcion":
+            "Continuamos apostando em materiais ecológicos e de baixo impacto ambiental."
+        }
+    },
+
+    {
+        "es": {
+            "titulo":
+            "Construcción eficiente",
+
+            "descripcion":
+            "Reducimos tiempos de construcción sin perder calidad en acabados."
+        },
+
+        "gl": {
+            "titulo":
+            "Construción eficiente",
+
+            "descripcion":
+            "Reducimos os tempos de construción sen perder calidade nos acabados."
+        },
+
+        "en": {
+            "titulo":
+            "Efficient construction",
+
+            "descripcion":
+            "We reduce construction times without losing finishing quality."
+        },
+
+        "pt": {
+            "titulo":
+            "Construção eficiente",
+
+            "descripcion":
+            "Reduzimos os tempos de construção sem perder qualidade nos acabamentos."
+        }
+    }
+]
+

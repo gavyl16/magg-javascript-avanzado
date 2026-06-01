@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- META ETIQUETAS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diseñamos y construimos casas de madera que combinan naturaleza, confort y diseño. 
+    Espacios cálidos, sostenibles y hechos para durar, pensados para quienes buscan vivir en armonía con el entorno.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Gabriel V.A.">
+    <meta name="keywords" content="casa, casa de madera, coruña, casa de madrea natural, casa de madera coruña">
+    <meta name="locality" content="culleredo, Galicia, España">
+    <meta name="category" content="Spanish, Spain, Wood carpentry">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <!-- TITULO-->
+    <title>MAGG || Casas de diseño</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header id="mainHeader" class="main-header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img class="logo-img" src="./assets/img/MAGG.png" alt="Logo" width="55" height="55">
+                    <span class="leter-logo">MAGG</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav justify-content-center w-100">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="navEstudio" aria-current="page" href="#">El Estudio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="navCasos" href="./views/productos.html">Casos de Éxito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="navProyecto" href="./views/presupuestos.html">Inicia tu Proyecto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="navCita" href="./views/contacto.html">Agendar Cita</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown language-selector">
+                    <button class="btn d-flex align-items-center p-0 border-0" type="button" aria-expanded="false" data-lang="es">
+                        <img id="banderaActual" src="./assets/img/espana.png" alt="España" width="25" height="25">
+                    </button>
+                    <!-- Dropdown de selección de idioma -->
+                    <ul class="dropdown-menu p-1">
+                        <li>
+                            <button class="dropdown-item d-flex align-items-center p-2 idioma-btn" type="button" data-lang="es">
+                                <img src="./assets/img/espana.png" alt="España" width="25" height="25">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item d-flex align-items-center p-2 idioma-btn" type="button" data-lang="gl">
+                                <img src="./assets/img/galicia.png" alt="Galego" width="25" height="25">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item d-flex align-items-center p-2 idioma-btn" type="button" data-lang="en">
+                                <img src="./assets/img/reino-unido.png" alt="Inglés" width="25" height="25">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item d-flex align-items-center p-2 idioma-btn" type="button" data-lang="pt">
+                                <img src="./assets/img/portugal.png" alt="Portugués" width="25" height="25">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <a href="./views/contacto.html" id="btnContacto" class="contactHeader">Contáctanos</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="flex-grow-1">
+        <section id="hero">
+            <div class="container-fluid">
+                <h1 id="heroTitulo" class="title-hero">Casas de Madera Naturales</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p id="heroTexto">
+                        Hogares que nacen de la tierra. Viviendas de madera natural que fusionan confort moderno,
+                        durabilidad excepcional y el máximo respeto por la naturaleza.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <a id="heroBoton" class="hero-btn" href="./views/presupuestos.html">Comienza tu proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <h2 id="serviciosTitulo">Nuestros Servicios</h2>
+                <div class="services-grid">
+                    <article class="card">
+                        <div class="card-front">
+                            <h3 id="servicio1Titulo">Diseño personalizado</h3>
+                        </div>
+                        <div class="card-back">
+                            <p id="servicio1Texto">Adaptamos cada proyecto a las necesidades de nuestros clientes.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-front">
+                            <h3 id="servicio2Titulo">Materiales ecológicos</h3>
+                        </div>
+                        <div class="card-back">
+                            <p id="servicio2Texto">Utilizamos madera certificada y sostenible para cuidar nuestro medio ambiente.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-front">
+                            <h3 id="servicio3Titulo">Construcción rápida</h3>
+                        </div>
+                        <div class="card-back">
+                            <p id="servicio3Texto">Optimización de tiempos sin perder calidad.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-front">
+                            <h3 id="servicio4Titulo">Eficiencia energética</h3>
+                        </div>
+                        <div class="card-back">
+                            <p id="servicio4Texto">Viviendas confortables y de bajo consumo.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="compromiso">
+            <div class="container">
+                <h2 id="compromisoTitulo">Comprometidos con el medio ambiente</h2>
+                <div class="services-grid">
+                    <article class="card">
+                        <div class="card-front">
+                            <h3 id="valor1Titulo">Sostenibilidad</h3>
+                        </div>
+                        <div class="card-back">
+                            <p id="valor1Texto">Respeto por el medio ambiente en cada proyecto.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-front">
+                            <h3 id="valor2Titulo">Calidad</h3>
+                        </div>
+                        <div class="card-back">
+                            <p id="valor2Texto">Altos estándares en materiales y acabados.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-front">
+                            <h3 id="valor3Titulo">Compromiso</h3> 
+                        </div>
+                        <div class="card-back">
+                            <p id="valor3Texto">Atención personalizada durante todo el proceso.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <h3 id="noticiasTitulo">Últimas noticias</h3>
+                <div id="news-container" class="news-grid">
+                    <!-- AJAX cargará noticias aquí -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row bg-#5A3A29 text-light py-4">
+                <div class="col-md-4 col-lg-4">
+                    <h4 id="footerSecciones" class="border-bottom pb-2">Secciones</h4>
+                    <ul class="navbar-nav justify-content-center w-100">
+                        <li class="nav-item pb-2 pt-2">
+                            <a class="link"  id="footerEstudio" aria-current="page" href="#">El Estudio</a>
+                        </li>
+                        <li class="nav-item pb-2 pt-2">
+                            <a class="link" id="footerCasos" href="./views/productos.html">Casos de Éxito</a>
+                        </li>
+                        <li class="nav-item pb-2 pt-2">
+                            <a class="link" id="footerProyecto" href="./views/presupuestos.html">Inicia tu Proyecto</a>
+                        </li>
+                        <li class="nav-item pb-2 pt-2">
+                            <a class="link" id="footerCita" href="./views/contacto.html">Agendar Cita</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="row text-center">
+                        <div class="col-12 p-3">
+                            <img src="./assets/img/MAGG.png" alt="Logo" width="90" height="90">
+                        </div>
+                        <div class="col-md-4 mt-3 pt-3">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <img src="./assets/img/facebook.png" alt="Facebook" width="30" height="30">
+                            </a>
+                        </div>
+                        <div class="col-md-4 mt-3 pt-3">
+                            <a href="https://www.instagram.com" target="_blank">
+                                <img src="./assets/img/application_15072085.png" alt="Instagram" width="30" height="30">
+                            </a>
+                        </div>
+                        <div class="col-md-4 mt-3 pt-3">
+                            <a href="https://www.twitter.com" target="_blank">
+                                <img src="./assets/img/twitter_5968830.png" alt="Twitter" width="30" height="30">
+                            </a>
+                        </div>
+                        <div class="col-12 mt-3 pt-3">
+                            <span id="footerCopy">&copy; 2024 MAGG. Todos los derechos reservados.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <h4 id="footerContacto" class="text-end border-bottom pb-2">Contacto</h4>
+                    <p id="footerDireccion" class="text-end">AC-213, 91, 15174 Culleredo, La Coruña</p>
+                    <p id="footerHorario" class="text-end">Lunes - Viernes</p>
+                    <p id="footerHorarioHora" class="text-end">9:00 - 20:00</p>
+                    <p id="footerEmail" class="text-end">info@magg.es</p>
+                    <p id="footerTelefono" class="text-end">981 123 456</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center bg-dark text-light py-2">
+                <div class="col-12 text-center">
+                    <a class="link" href="./views/aviso-legal.html">
+                        <span id="legalAviso">Aviso legal</span>
+                    </a>
+                    <a class="link" href="./views/politica-privacidad.html">
+                        <span id="legalPrivacidad">Política de privacidad</span>
+                    </a>
+                    <a class="link" href="./views/politica-cookies.html">
+                        <span id="legalCookies">Política de cookies</span>
+                    </a>
+                    <a class="link" href="./views/politica-ventas.html">
+                        <span id="legalVentas">Política de ventas</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!--JS-->
+    <script src="./js/javascript.js"></script>
+</body>
+</html>
