@@ -1,6 +1,36 @@
-/*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Reinicio de estilos -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+/**
+ * =============================================================
+ * MAGG - Casas de Madera
+ * Archivo: estilos.css
+ * Descripción: Hoja de estilos principal del proyecto.
+ *
+ * Índice de secciones:
+ *   1.  Reset
+ *   2.  Navegación
+ *   3.  Botón de contacto (header)
+ *   4.  Selector de idioma
+ *   5.  Footer
+ *   6.  Hero (index)
+ *   7.  Páginas legales
+ *   8.  Contacto
+ *   9.  Productos (casos de éxito y planos)
+ *  10.  Presupuesto
+ *
+ * Paleta de colores:
+ *   Marrón principal  → #6B4E3D
+ *   Marrón oscuro     → #4A3428
+ *   Verde acento      → #94C7A8
+ *   Fondo claro       → #F6F3EE
+ *   Texto principal   → #2E2A27
+ *   Texto suave       → #665F58
+ * =============================================================
+ */
+
+/* =============================================================
+   1. RESET
+   Elimina márgenes y paddings por defecto en todos los elementos.
+   Normaliza el modelo de caja a border-box.
+============================================================= */
 
 *{
     margin: 0;
@@ -9,9 +39,11 @@
     font-family: system-ui, sans-serif;
 }
 
-/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-Navegación*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+/* =============================================================
+   2. NAVEGACIÓN
+   Barra de navegación fija en la parte superior.
+   Incluye logo, links, selector de idioma y botón de contacto.
+============================================================= */
 
 .navbar {
     position: fixed;
@@ -47,7 +79,7 @@
     font-weight: 900;
     font-size: 1.7rem;
     letter-spacing: 0.5px;
-    /* Degradado en el logo */
+    /* === Degradado en el logo === */
     background: linear-gradient(135deg, #2f5d50 0%, #ffffff 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -58,7 +90,7 @@
     word-spacing: 5px;
 }
 
-/* Animación simple */
+/* === Animación simple === */
 
 .navbar-brand:hover {
     transform: scale(1.1);
@@ -80,7 +112,7 @@
   height: 2px;
   bottom: 0;
   left: 50%;
-  background-color: #84c4a4; /* El verde de tu logo INTRE */
+  background-color: #84c4a4;
   transition: all 0.5s ease;
   transform: translateX(-50%);
 }
@@ -98,9 +130,10 @@
   background-color: #84c4a4;
 }
 
-/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-Boton1 de contacto*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+/* =============================================================
+   3. BOTÓN DE CONTACTO (HEADER)
+   Botón redondeado en la navbar con efecto hover de relleno.
+============================================================= */
 
 .contactHeader {
     color: #84c4a4;
@@ -117,9 +150,11 @@
     color: white;
 }
 
-/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-Selector de idioma*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+/* =============================================================
+   4. SELECTOR DE IDIOMA
+   Dropdown con banderas. Se abre al pasar el ratón.
+   Centrado respecto al botón que lo activa.
+============================================================= */
 
 .language-selector{
     position: relative;
@@ -145,9 +180,11 @@
     }
 }
 
-/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-Footer*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+/* =============================================================
+   5. FOOTER
+   Fondo marrón oscuro con texto blanco.
+   Incluye secciones, logo, redes sociales y datos de contacto.
+============================================================= */
 
 footer{
     background-color: #5A3A29;
@@ -170,9 +207,11 @@ footer{
     margin: 0 10px;
 }
 
-/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-hero*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+/* =============================================================
+   6. HERO (INDEX)
+   Sección de portada a pantalla completa con imagen de fondo,
+   título con degradado, descripción y botón de llamada a acción.
+============================================================= */
 
 #hero {
     background-image: url('../assets/img/casa_nordica.png');
@@ -232,35 +271,13 @@ footer{
 }
 
 /* ==========================
-   VARIABLES
-========================== */
-
-:root{
-    --bg: #F6F3EE;
-    --surface: #FFFFFF;
-    --surface-2: #ECE5DC;
-
-    --text: #2E2A27;
-    --text-soft: #665F58;
-
-    --wood: #6B4E3D;
-    --wood-dark: #4A3428;
-
-    --accent: #95C8A8;
-    --accent-hover: #7AB38F;
-
-    --shadow: 0 12px 35px rgba(0,0,0,.08);
-    --radius: 24px;
-}
-
-/* ==========================
    BODY
 ========================== */
 
 body{
     font-family: "Inter", sans-serif;
-    background: var(--bg);
-    color: var(--text);
+    background: #F6F3EE;
+    color: #2E2A27;
     overflow-x: hidden;
 }
 
@@ -307,34 +324,13 @@ h1,h2,h3{
 }
 
 /* ==========================
-   VARIABLES
-========================== */
-
-:root{
-    --bg: #F6F3EE;
-    --surface: rgba(255,255,255,.78);
-    --surface-2: #ECE5DC;
-
-    --text: #2E2A27;
-    --text-soft: #645C55;
-
-    --wood: #6B4E3D;
-    --wood-dark: #4A3428;
-
-    --accent: #94C7A8;
-    --shadow: 0 12px 35px rgba(0,0,0,.08);
-
-    --radius: 24px;
-}
-
-/* ==========================
    BASE
 ========================== */
 
 body{
     font-family: "Inter", sans-serif;
-    background: var(--bg);
-    color: var(--text);
+    background: #F6F3EE;
+    color: #2E2A27;
 }
 
 h1,h2,h3{
@@ -366,7 +362,7 @@ section{
 .services h2,
 .compromiso h2{
     text-align: center;
-    color: var(--wood);
+    color: #6B4E3D;
     font-size: clamp(2rem, 5vw, 3.2rem);
     margin-bottom: 70px;
 }
@@ -386,10 +382,10 @@ section{
 ========================== */
 
 .card{
-    background: var(--surface);
+    background: #FFFFFF;
     backdrop-filter: blur(12px);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
+    border-radius: 24px;
+    box-shadow: 0 12px 35px rgba(0,0,0,.08);
     border: 1px solid rgba(255,255,255,.6);
     transition: all .35s ease;
     text-align: center;
@@ -401,7 +397,7 @@ section{
     align-items: center;
 }
 
-/* línea decorativa superior */
+/* === línea decorativa superior === */
 
 .card::before{
     content: "";
@@ -410,10 +406,10 @@ section{
     left: 0;
     width: 100%;
     height: 5px;
-    background: linear-gradient(90deg, var(--wood), #B78D68);
+    background: linear-gradient(90deg, #6B4E3D, #B78D68);
 }
 
-/* Hover elegante */
+/* === Hover elegante === */
 
 .card:hover{
     transform: translateY(-8px);
@@ -431,7 +427,7 @@ section{
     transition: all .45s ease;
 }
 
-/* FRONT */
+/* === FRONT === */
 
 .card-front{
     opacity: 1;
@@ -439,12 +435,12 @@ section{
 }
 
 .card-front h3{
-    color: var(--wood);
+    color: #6B4E3D;
     font-size: 1.9rem;
     line-height: 1.2;
 }
 
-/* BACK */
+/* === BACK === */
 
 .card-back{
     position: absolute;
@@ -454,7 +450,7 @@ section{
 }
 
 .card-back p{
-    color: var(--text-soft);
+    color: #665F58;
     line-height: 1.8;
     font-size: 1rem;
 }
@@ -479,7 +475,7 @@ section{
 ========================== */
 
 .compromiso{
-    background: var(--surface-2);
+    background: #ECE5DC;
 }
 
 /* ==========================
@@ -509,7 +505,7 @@ section{
 
 .news h3{
     text-align: center;
-    color: var(--wood);
+    color: #6B4E3D;
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 70px;
 }
@@ -524,7 +520,7 @@ section{
     background: rgba(255,255,255,.85);
     padding: 2rem;
     border-radius: 24px;
-    box-shadow: var(--shadow);
+    box-shadow: 0 12px 35px rgba(0,0,0,.08);
     transition: .3s ease;
 }
 
@@ -533,18 +529,20 @@ section{
 }
 
 .news-card h4{
-    color: var(--wood);
+    color: #6B4E3D;
     margin-bottom: 15px;
 }
 
 .news-card p{
-    color: var(--text-soft);
+    color: #665F58;
     line-height: 1.8;
 }
 
-/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-Aviso Legal*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+/* =============================================================
+   7. PÁGINAS LEGALES
+   Estilos compartidos por aviso legal, política de privacidad,
+   política de cookies y política de ventas.
+============================================================= */
 
 .legal{
     background: #F6F3EE;
@@ -554,7 +552,7 @@ section{
     padding: 120px 40px;
 }
 
-/* TÍTULO */
+/* === TÍTULO === */
 
 .legal h1{
     font-family: "Playfair Display", serif;
@@ -576,7 +574,7 @@ section{
     transform: translateX(-50%);
 }
 
-/* SUBTÍTULOS */
+/* === SUBTÍTULOS === */
 
 .legal h2{
     font-family: "Playfair Display", serif;
@@ -598,7 +596,7 @@ section{
     padding-left: 18px;
 }
 
-/* TEXTO */
+/* === TEXTO === */
 
 .legal p{
     font-family: "Inter", sans-serif;
@@ -608,20 +606,20 @@ section{
     margin-bottom: 18px;
 }
 
-/* DATOS EMPRESA */
+/* === DATOS EMPRESA === */
 
 .legal strong{
     color: #2F2B28;
     font-weight: 600;
 }
 
-/* separación visual */
+/* === separación visual === */
 
 .legal p + h2{
     padding-top: 20px;
 }
 
-/* responsive */
+/* === responsive === */
 
 @media(max-width:768px){
     .legal{
@@ -638,9 +636,11 @@ section{
     }
 }
 
-/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-Contacto*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+/* =============================================================
+   8. CONTACTO
+   Página de reserva de cita: formulario de WhatsApp,
+   tarjeta de información de contacto y mapa Leaflet.
+============================================================= */
 
 .mapa-centrado{
     width: 80%;
@@ -675,7 +675,7 @@ section{
     letter-spacing: .5px;
 }
 
-/* línea decorativa elegante */
+/* === línea decorativa elegante === */
 
 .titulo::after{
     content: "";
@@ -721,7 +721,7 @@ section{
     margin-bottom: 35px;
 }
 
-/* campos */
+/* === campos === */
 
 .campo{
     display: flex;
@@ -735,7 +735,7 @@ section{
     color: #4E433D;
 }
 
-/* inputs */
+/* === inputs === */
 
 .campo input,
 .campo textarea{
@@ -753,14 +753,14 @@ section{
     min-height: 160px;
 }
 
-/* focus */
+/* === focus === */
 
 .campo input:focus,
 .campo textarea:focus{
     box-shadow: 0 0 0 2px #C8B29A;
 }
 
-/* botón */
+/* === botón === */
 
 .contact-card-form button{
     border: none;
@@ -798,7 +798,7 @@ section{
     margin-bottom: 35px;
 }
 
-/* grid info */
+/* === grid info === */
 
 .info-grid-custom{
     display: flex;
@@ -844,9 +844,11 @@ section{
     }
 }
 
-/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-Productos*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+/* =============================================================
+   9. PRODUCTOS (CASOS DE ÉXITO Y PLANOS)
+   Galería de proyectos terminados y visor de planos
+   con panel desplegable de distribución interior.
+============================================================= */
 
 /* ==========================
    CASOS DE ÉXITO
@@ -858,7 +860,7 @@ section{
     padding: 110px 8%;
 }
 
-/* título */
+/* === título === */
 
 .casos-exito h1{
     text-align: center;
@@ -868,7 +870,7 @@ section{
     margin-bottom: 18px;
 }
 
-/* subtítulo */
+/* === subtítulo === */
 
 .subtitulo{
     max-width: 760px;
@@ -878,7 +880,7 @@ section{
     line-height: 1.9;
 }
 
-/* grid */
+/* === grid === */
 
 .galeria-grid{
     display: grid;
@@ -886,7 +888,7 @@ section{
     gap: 35px;
 }
 
-/* card */
+/* === card === */
 
 .galeria-item{
     background: white;
@@ -903,7 +905,7 @@ section{
     transform: translateY(-8px);
 }
 
-/* imagen */
+/* === imagen === */
 
 .galeria-item img{
     width: 100%;
@@ -916,7 +918,7 @@ section{
     transform: scale(1.04);
 }
 
-/* info */
+/* === info === */
 
 .proyecto-info{
     padding: 30px;
@@ -936,7 +938,7 @@ section{
     margin-bottom: 20px;
 }
 
-/* metadata */
+/* === metadata === */
 
 .proyecto-meta{
     display: flex;
@@ -953,7 +955,7 @@ section{
     font-size: .95rem;
 }
 
-/* CTA */
+/* === CTA === */
 
 .cta{
     display: inline-block;
@@ -966,7 +968,7 @@ section{
     transform: translateX(5px);
 }
 
-/* responsive */
+/* === responsive === */
 
 @media(max-width:768px){
     .casos-exito{
@@ -1002,7 +1004,7 @@ section{
     color: #756C64;
 }
 
-/* GRID */
+/* === GRID === */
 
 .planos-grid{
     display: grid;
@@ -1010,7 +1012,7 @@ section{
     gap: 35px;
 }
 
-/* CARD */
+/* === CARD === */
 
 .plano-card{
     background: white;
@@ -1025,7 +1027,7 @@ section{
     transform: translateY(-6px);
 }
 
-/* IMAGEN */
+/* === IMAGEN === */
 
 .plano-card img{
     width: 100%;
@@ -1036,7 +1038,7 @@ section{
     border-bottom: 1px solid rgba(0,0,0,.05);
 }
 
-/* INFO */
+/* === INFO === */
 
 .plano-info{
     padding: 30px;
@@ -1054,7 +1056,7 @@ section{
     margin-bottom: 20px;
 }
 
-/* TAGS */
+/* === TAGS === */
 
 .plano-meta{
     display: flex;
@@ -1071,7 +1073,7 @@ section{
     font-size: .95rem;
 }
 
-/* BOTÓN */
+/* === BOTÓN === */
 
 .plano-card button{
     border: none;
@@ -1087,7 +1089,7 @@ section{
     transform: translateY(-2px);
 }
 
-/* PANEL OCULTO */
+/* === PANEL OCULTO === */
 
 .plano-detalle{
     position: absolute;
@@ -1103,7 +1105,7 @@ section{
     justify-content: center;
 }
 
-/* CUANDO SE ABRE */
+/* === CUANDO SE ABRE === */
 
 .plano-card.abierto .plano-detalle{
     opacity: 1;
@@ -1122,7 +1124,7 @@ section{
     margin-bottom: 12px;
 }
 
-/* responsive */
+/* === responsive === */
 
 @media(max-width:768px){
     .planos-grid{
@@ -1130,13 +1132,13 @@ section{
     }
 }
 
-/* para posicionar la capa */
+/* === para posicionar la capa === */
 
 .plano-card{
     position: relative;
 }
 
-/* panel oculto */
+/* === panel oculto === */
 
 .plano-detalle{
     position: absolute;
@@ -1154,7 +1156,7 @@ section{
     border-radius: 28px;
 }
 
-/* panel visible */
+/* === panel visible === */
 
 .plano-detalle.activo{
     opacity: 1;
@@ -1173,9 +1175,11 @@ section{
     margin-bottom: 12px;
 }
 
-/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-Productos*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+/* =============================================================
+   9. PRODUCTOS (CASOS DE ÉXITO Y PLANOS)
+   Galería de proyectos terminados y visor de planos
+   con panel desplegable de distribución interior.
+============================================================= */
 
 /* ==========================
    PRESUPUESTO SECTION
@@ -1187,7 +1191,7 @@ section{
     background: linear-gradient(135deg, #F7F4EF, #EFE7DC);
 }
 
-/* TITULO */
+/* === TITULO === */
 
 .presupuesto-section h1{
     text-align: center;
@@ -1198,7 +1202,7 @@ section{
     font-family: "Playfair Display", serif;
 }
 
-/* FORM */
+/* === FORM === */
 
 .formulario{
     max-width: 1200px;
@@ -1209,7 +1213,7 @@ section{
     gap: 35px;
 }
 
-/* BLOQUES */
+/* === BLOQUES === */
 
 .bloque-form{
     background: white;
@@ -1224,7 +1228,7 @@ section{
     translateY(-4px);
 }
 
-/* TITULOS */
+/* === TITULOS === */
 
 .bloque-form h2{
     color: #5C4334;
@@ -1234,7 +1238,7 @@ section{
     padding-bottom: 15px;
 }
 
-/* CAMPOS */
+/* === CAMPOS === */
 
 .campo{
     display: flex;
@@ -1248,7 +1252,7 @@ section{
     font-size: 1rem;
 }
 
-/* INPUTS */
+/* === INPUTS === */
 
 .campo input,
 .campo textarea,
@@ -1274,7 +1278,7 @@ textarea{
     resize: vertical;
 }
 
-/* EXTRAS */
+/* === EXTRAS === */
 
 .extras{
     display: flex;
@@ -1302,7 +1306,7 @@ textarea{
     transform: scale(1.2);
 }
 
-/* PRECIO */
+/* === PRECIO === */
 
 .precio-final{
     margin-top: 35px;
@@ -1325,7 +1329,7 @@ textarea{
     font-weight: bold;
 }
 
-/* PRIVACIDAD */
+/* === PRIVACIDAD === */
 
 .campo-checkbox{
     grid-column: 1 / -1;
@@ -1348,7 +1352,7 @@ textarea{
     font-weight: bold;
 }
 
-/* BOTONES */
+/* === BOTONES === */
 
 .botones-form{
     grid-column: 1 / -1;
@@ -1367,7 +1371,7 @@ textarea{
     transition: .3s ease;
 }
 
-/* enviar */
+/* === enviar === */
 
 button[type="submit"]{
     background: #5C4334;
@@ -1382,7 +1386,7 @@ button[type="submit"]:hover{
     rgba(92,67,52,.25);
 }
 
-/* reset */
+/* === reset === */
 
 button[type="reset"]{
     background: #EDE5DB;
@@ -1394,7 +1398,7 @@ button[type="reset"]:hover{
     translateY(-3px);
 }
 
-/* responsive */
+/* === responsive === */
 
 @media(max-width:768px){
 
