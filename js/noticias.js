@@ -15,7 +15,7 @@
  */
 function cargarNoticias(idioma = "es") {
 
-    fetch("../assets/json/noticias.json")
+    fetch(RUTAS_JSON + "noticias.json")
 
     .then(response => {
 

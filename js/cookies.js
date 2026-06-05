@@ -63,7 +63,7 @@ function mostrarBannerCookies() {
         <div class="cookie-content">
             <p>
                 Usamos cookies para recordar tus preferencias de idioma y mejorar tu experiencia.
-                Consulta nuestra <a href="/magg-javascript-avanzado/views/politica-cookies.html">Política de cookies</a>.
+                Consulta nuestra <a href="${RUTA_VIEWS}politica-cookies.html">Política de cookies</a>.
             </p>
             <div class="cookie-botones">
                 <button id="cookieAceptar">Aceptar</button>
