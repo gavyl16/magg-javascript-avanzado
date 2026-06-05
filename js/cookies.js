@@ -29,7 +29,7 @@ function setCookie(nombre, valor, dias) {
  * Obtiene el valor de una cookie por nombre.
  * @param {string} nombre - Nombre de la cookie
  * @returns {string|null} - Valor de la cookie o null si no existe
- */
+*/
 function getCookie(nombre) {
     const clave = nombre + "=";
     const cookies = document.cookie.split(";");
@@ -63,7 +63,7 @@ function mostrarBannerCookies() {
         <div class="cookie-content">
             <p>
                 Usamos cookies para recordar tus preferencias de idioma y mejorar tu experiencia.
-                Consulta nuestra <a href="${RUTA_VIEWS}politica-cookies.html">Política de cookies</a>.
+                Consulta nuestra <a href="./views/politica-cookies.html">Política de cookies</a>.
             </p>
             <div class="cookie-botones">
                 <button id="cookieAceptar">Aceptar</button>
