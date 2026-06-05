@@ -15,7 +15,7 @@
  */
 function cargarNoticias(idioma = "es") {
 
-    fetch("/magg-javascript-avanzado/assets/json/noticias.json")
+    fetch("../assets/json/noticias.json")
 
     .then(response => {
 

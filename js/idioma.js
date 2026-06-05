@@ -30,7 +30,7 @@ function sincronizarIdiomaCookie(idioma) {
  */
 async function cargarIdioma(idioma) {
     try {
-        const response = await fetch("/magg-javascript-avanzado/assets/json/idiomas.json");
+        const response = await fetch("../assets/json/idiomas.json");
         const data = await response.json();
         const traduccion = data[idioma];
 

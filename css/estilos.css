@@ -223,21 +223,27 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: #5A3A29;
+    color: white;
     text-align: center;
+    position: relative;
 }
-
+#hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 0;
+}
+#hero *{
+    position: relative;
+    z-index: 1;
+}
 .title-hero {
     margin: 15px;
     font-family: orbitron;
     font-weight: 900;
     font-size: 3.5rem;
     letter-spacing: 0.5px;
-    background: linear-gradient(135deg, #2f5d50 0%, #ffffff 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #2f5d50;
     display: inline-block;
     margin-bottom: 20px;
 }
