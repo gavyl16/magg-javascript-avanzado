@@ -30,8 +30,13 @@ function sincronizarIdiomaCookie(idioma) {
  */
 async function cargarIdioma(idioma) {
     try {
-        console.log(window.location.href);
-        const response = await fetch("./assets/json/idiomas.json");
+        // Calcula la ruta base según la profundidad de la página actual
+        // index.html está en la raíz, el resto en /views/ (un nivel más profundo)
+        const segmentos = window.location.pathname.replace(/\/$/, "").split("/").filter(Boolean);
+        const enSubpagina = segmentos[segmentos.length - 1].endsWith(".html") && segmentos.length > 1;
+        const rutaJson = enSubpagina ? "../assets/json/idiomas.json" : "./assets/json/idiomas.json";
+
+        const response = await fetch(rutaJson);
         const data = await response.json();
         const traduccion = data[idioma];
 
