@@ -30,7 +30,8 @@ function sincronizarIdiomaCookie(idioma) {
  */
 async function cargarIdioma(idioma) {
     try {
-        const response = await fetch("../assets/json/idiomas.json");
+        console.log(window.location.href);
+        const response = await fetch("./assets/json/idiomas.json");
         const data = await response.json();
         const traduccion = data[idioma];
 
