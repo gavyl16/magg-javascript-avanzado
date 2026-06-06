@@ -30,11 +30,11 @@ function sincronizarIdiomaCookie(idioma) {
  */
 async function cargarIdioma(idioma) {
     try {
-        // Calcula la ruta base según la profundidad de la página actual
-        // index.html está en la raíz, el resto en /views/ (un nivel más profundo)
-        const segmentos = window.location.pathname.replace(/\/$/, "").split("/").filter(Boolean);
-        const enSubpagina = segmentos[segmentos.length - 1].endsWith(".html") && segmentos.length > 1;
-        const rutaJson = enSubpagina ? "../assets/json/idiomas.json" : "./assets/json/idiomas.json";
+        // Comprueba si la carpeta que contiene la página actual es /views/
+        // Funciona tanto en local (Live Server) como en GitHub Pages
+        const partes = window.location.pathname.split("/");
+        const carpeta = partes[partes.length - 2]; // carpeta que contiene el HTML
+        const rutaJson = carpeta === "views" ? "../assets/json/idiomas.json" : "./assets/json/idiomas.json";
 
         const response = await fetch(rutaJson);
         const data = await response.json();
